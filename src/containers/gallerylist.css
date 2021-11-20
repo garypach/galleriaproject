@@ -1,0 +1,41 @@
+.thumbnail-container{
+    width: 100%;
+    min-width: 320px;
+padding: 24px;
+}
+.thumbnail-content{
+    position: relative;
+}
+
+.thumbnail-info{
+    position: absolute;
+    left: 32px;
+    bottom: 56px;
+}
+
+
+.thumbnail-info :nth-child(1){
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+}
+
+
+.thumbnail-info :nth-child(2){
+    font-family: Libre Baskerville;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+
+color: #FFFFFF;
+
+mix-blend-mode: normal;
+opacity: 0.75;
+}

@@ -1,7 +1,7 @@
 import axios from "axios";
 import GALLERY from "../constants";
 
-export const requestGallery = (data) => async (dispatch) => {
+export const requestGallery = () => async (dispatch) => {
   dispatch({
     type: GALLERY.LOAD,
   });

@@ -1,14 +1,13 @@
 import React, {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {requestGallery} from "../actions/GalleryActions";
-import data from "../data.json";
-
+import './gallerylist.css'
 const GalleryList = (props) => {
   const { galleryData, isLoading } = useSelector((state) => state.reducer);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(requestGallery(data));
+    dispatch(requestGallery());
   }, []);
 
   return (
@@ -16,9 +15,13 @@ const GalleryList = (props) => {
       {isLoading && <div className="loading">Data loading...</div>}
       {galleryData.map((gallery) => {
         return (
-          <div key={gallery.id} className="container">
-            <div className="content">
+          <div key={gallery.id} className="thumbnail-container">
+            <div className="thumbnail-content">
+              <img src={`${gallery.images.thumbnail}`} alt ='thumbnail'/>
+              <div className="thumbnail-info">
               <h1>{gallery.name}</h1>
+              <h1>{gallery.artist.name}</h1>
+              </div>
             </div>
           </div>
         );
