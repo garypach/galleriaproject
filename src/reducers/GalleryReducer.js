@@ -1,7 +1,7 @@
 import GALLERY from "../constants";
 
 const initalState = {
-  galleryData: [],
+  data: [],
   isLoading: false,
   isError: false,
 };
@@ -17,7 +17,7 @@ const reducer = (state = initalState, action) => {
     case GALLERY.LOAD_SUCCESS:
       return {
         ...state,
-        galleryData: action.galleryData,
+        data: action.payload,
         isLoading: false,
       };
     default:

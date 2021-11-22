@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-// import {Routes, Route} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import GalleryList from "./containers/GalleryList";
-import Header from './containers/header/Header';
-
+import Gallery from './containers/Gallery'
 function App() {
   return (
     <div className="App">
-      <Header/>
       <GalleryList/>
+      <Switch>
+      <Route path={"/gallery/:gallery"} exact component={Gallery} />
+      </Switch>
     </div>
   );
 }
