@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {requestGallery} from "../actions/GalleryActions";
 import './gallerylist.css'
 import {Link} from "react-router-dom";
-
+import Header from './header/Header'
 const GalleryList = (props) => {
   const galleryList = useSelector(state => state.reducer);
   const dispatch = useDispatch();
@@ -29,14 +29,15 @@ const GalleryList = (props) => {
           </div>
         );
       })} */}
+      <Header/>
       <div className={"list-wrapper"}>
-          {galleryList.data.map(gallery => {
+          {galleryList.data.map((gallery,idx) => {
            return (
             <div key={gallery.id} className="thumbnail-container">
               <div className="thumbnail-content">
                 <img src={`${gallery.images.thumbnail}`} alt ='thumbnail'/>
                 <div className="thumbnail-info">
-                  <Link to={`/${gallery.name}`}>
+                  <Link to={`/${idx}/${gallery.name}`}>
                 <h1>{gallery.name}</h1>
                 </Link>
                 <h1>{gallery.artist.name}</h1>

@@ -55,8 +55,8 @@ margin-left: 24px;
 }
 
 .gallery-text{
-    position: absolute;
-    top: -40px;
+    position: relative;
+    top: -50px;
     left: 0;
     margin-top: 118px;
     font-family: Libre Baskerville;
@@ -90,4 +90,36 @@ line-height: 100px;
 color: #F3F3F3;
 right: 30px;
 top: 44px;
+}
+
+.gallery-next{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+}
+.gallery-next-right img{
+    margin: 20px 10px;
+
+}
+.gallery-next-left:nth-child(1){
+    font-family: Libre Baskerville;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+
+color: #000000;
+}
+
+.gallery-next-left:nth-child(2){
+    font-family: Libre Baskerville;
+font-style: normal;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+mix-blend-mode: normal;
+opacity: 0.75;
 }
