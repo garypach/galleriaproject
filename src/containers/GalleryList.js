@@ -36,7 +36,7 @@ const GalleryList = (props) => {
               <div className="thumbnail-content">
                 <img src={`${gallery.images.thumbnail}`} alt ='thumbnail'/>
                 <div className="thumbnail-info">
-                  <Link to={`/gallery/${gallery.name.replace(/\s/g, '-')}`}>
+                  <Link to={`/${gallery.name}`}>
                 <h1>{gallery.name}</h1>
                 </Link>
                 <h1>{gallery.artist.name}</h1>

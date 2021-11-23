@@ -1,8 +1,10 @@
 .header-container{
     width: 100%;
-    padding: 24px;
+
 }
 .header-logo img{
     width: 113px;
     height: 32px;
+    padding: 24px;
+
 }

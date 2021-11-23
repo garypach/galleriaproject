@@ -1,0 +1,93 @@
+.gallery-container{
+    width: 100%;
+    min-width: 320px;
+}
+.gallery-content{
+    position: relative;
+    padding: 24px;
+
+}
+
+.gallery-content img{
+    width: 100%;
+}
+
+.gallery-info{
+    position: absolute;
+    left: 24px;
+    bottom: 0px;
+    background-color: white;
+    color: black;
+    width: 280px;
+    height: 104px;
+}
+
+
+.gallery-info :nth-child(1){
+    font-family: Libre Baskerville;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height */
+    margin-left: 24px;
+    color: black;
+}
+
+
+.gallery-info :nth-child(2){
+    font-family: Libre Baskerville;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+
+color: black;
+
+mix-blend-mode: normal;
+opacity: 0.75;
+margin-left: 24px;
+}
+
+.gallery-year{
+    position: relative;
+    padding: 24px;
+}
+
+.gallery-text{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    margin-top: 118px;
+    font-family: Libre Baskerville;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 28px;
+/* or 200% */
+padding: 24px;
+
+color: #7D7D7D;
+
+}
+
+.artist{
+    position: absolute;
+    top: 0;
+}
+.artist img{
+    width: 64px;
+    height: 64px;
+}
+.year{
+    position: absolute;
+    font-family: Libre Baskerville;
+font-style: normal;
+font-weight: bold;
+font-size: 100px;
+line-height: 100px;
+/* identical to box height, or 100% */
+color: #F3F3F3;
+right: 30px;
+top: 44px;
+}

@@ -1,10 +1,15 @@
 .thumbnail-container{
     width: 100%;
     min-width: 320px;
-padding: 24px;
 }
 .thumbnail-content{
     position: relative;
+    padding: 24px;
+
+}
+
+.thumbnail-content img{
+    width: 100%;
 }
 
 .thumbnail-info{

@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, Redirect} from "react-router-dom";
 import GalleryList from "./containers/GalleryList";
 import Gallery from './containers/Gallery'
+import Header from './containers/header/Header'
 function App() {
   return (
     <div className="App">
-      <GalleryList/>
+      <Header/>
       <Switch>
-      <Route path={"/gallery/:gallery"} exact component={Gallery} />
+      <Route path={"/"} exact component={GalleryList} />
+      <Route path={"/:gallery"} component={Gallery} />
+      <Redirect to={"/"} />
       </Switch>
     </div>
   );
