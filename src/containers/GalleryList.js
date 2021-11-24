@@ -29,7 +29,9 @@ const GalleryList = (props) => {
           </div>
         );
       })} */}
+      <div>
       <Header/>
+      </div>
       <div className={"list-wrapper"}>
           {galleryList.data.map((gallery,idx) => {
            return (
