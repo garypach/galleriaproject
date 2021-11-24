@@ -36,14 +36,13 @@ const GalleryList = (props) => {
           {galleryList.data.map((gallery,idx) => {
            return (
             <div key={gallery.id} className="thumbnail-container">
-              <div className="thumbnail-content">
+              <div className={`thumbnail-content gallery__item--${idx}`}>
                 <img src={`${gallery.images.thumbnail}`} alt ='thumbnail'/>
                 <div className="thumbnail-info">
                   <Link to={`/${idx}/${gallery.name}`}>
                 <h1>{gallery.name}</h1>
                 </Link>
                 <h1>{gallery.artist.name}</h1>
-
                 </div>
               </div>
             </div>

@@ -1,15 +1,16 @@
 import React from "react";
-import logo from '../../shared/logo.svg'
+import { Link } from "react-router-dom";
 import './header.css'
 const Header = (props) => {
 
 
   return (
       <div className="header-container">
+        <Link to="/">
           <div className="header-logo">
-            <img src={logo} alt="logo"/>
+            <img src='/../../../shared/logo.svg' alt="logo"/>
           </div>
-
+    </Link>
       </div>
   );
 };
